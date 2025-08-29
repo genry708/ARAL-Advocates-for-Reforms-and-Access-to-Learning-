@@ -1,0 +1,162 @@
+.bg {
+    background-image:url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 140px;
+}
+
+/* Main header container */
+.hdr {
+  display: flex;
+  justify-content: space-between; /* logo left, nav middle, search right */
+  align-items: center;
+  background-color: #1A237E;
+  padding: 10px 20px;
+}
+
+/* Logo image */
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+/* Navigation */
+.navbar {
+  margin-left: 40px; /* move a little right from logo */
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #ffffff;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #ffffff;
+}
+
+.quote{
+    padding-top: 140px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;  /* align text to top of image */
+  gap: 20px;
+}
+
+/* Smaller image */
+.about-image img {
+  width: 180px;       /* adjust size */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text takes up the rest of the space */
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  margin-top: 0;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin: 0 auto 15px;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns */
+  gap: 40px;
+}
+
+/* Section headings */
+.info-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Links list */
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section */
+.contact p {
+  margin: 8px 0;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+}
